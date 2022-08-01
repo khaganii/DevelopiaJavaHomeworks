@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="69daa1b9-4a8d-4b07-a06d-69ee27264af8" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/homeWorkArrays/MainArrays.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/homeworkOperator2/SolveProblems.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/homeworkOperator2/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/homeworkOperator2/Main.java" afterDir="false" />
@@ -36,13 +37,26 @@
     "RunOnceActivity.ShowReadmeOnStart": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="Application.MainArrays">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="homeworkOperator2.Main" />
       <module name="homeworks" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="homeworkOperator2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainArrays" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="homeWorkArrays.MainArrays" />
+      <module name="homeworks" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="homeWorkArrays.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -65,6 +79,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MainArrays" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.homeworkOperators1.Main" />
       </list>
