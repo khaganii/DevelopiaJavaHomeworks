@@ -4,6 +4,10 @@
     <list default="true" id="69daa1b9-4a8d-4b07-a06d-69ee27264af8" name="Changes" comment="">
       <change afterPath="$PROJECT_DIR$/src/homeworkClassesAndMethods/Book.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/homeworkClassesAndMethods/MainClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/homeworkConstructors/Computer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/homeworkConstructors/MainClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/homeworkDataStructuresProblems/MainClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/homeworkDataStructuresProblems/Solutions.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -36,7 +40,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.MainClass">
+  <component name="RunManager" selected="Application.homeworkDataStructuresProblems.MainClass">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="homeworkOperator2.Main" />
       <module name="homeworks" />
@@ -76,6 +80,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="homeworkDataStructuresProblems.MainClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="homeworkDataStructuresProblems.MainClass" />
+      <module name="homeworks" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="homeworkDataStructuresProblems.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="homeworkOperators1.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="homeworkOperators1.Main" />
       <module name="homeworks" />
@@ -91,6 +108,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.homeworkDataStructuresProblems.MainClass" />
         <item itemvalue="Application.MainClass" />
         <item itemvalue="Application.MainArrays" />
         <item itemvalue="Application.Main" />
