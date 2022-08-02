@@ -12,6 +12,6 @@ public class MainClass {
 //        System.out.println(solution.findSmallestDigitOfNumber(241097));
 //        System.out.println(solution.calculateDaysCountOfGrowingUpTree());
 //        solution.printAlphabet();
-        
+
     }
 }
