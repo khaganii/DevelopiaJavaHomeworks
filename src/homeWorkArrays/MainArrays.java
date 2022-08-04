@@ -19,10 +19,10 @@ public class MainArrays {
 
     private static boolean isPrime(int num){
         int dividerCount = 0;
-        for (int i = 1; i <= num/2; i++)
+        for (int i = 2; i <= num/2; i++)
             if (num % i == 0)
                 dividerCount++;
-        return (dividerCount==1);
+        return (dividerCount==0);
     }
 
     private static void printEvenElementsOfArray(int[] arr) {

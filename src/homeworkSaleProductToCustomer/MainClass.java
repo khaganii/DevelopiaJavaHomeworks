@@ -22,7 +22,7 @@ public class MainClass {
         Shopping shopping4 = new Shopping(4, customer3, product2);
         System.out.println(shopping4.shoppingPresentation());
 
-        
+
         System.out.println(product3.productPresentation());
         System.out.println(customer3.customerProduction());
 
