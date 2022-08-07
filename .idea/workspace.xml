@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="69daa1b9-4a8d-4b07-a06d-69ee27264af8" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/homeworkArraySorting/MainClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/homeworkArraySorting/SortAnArrayByDescending.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/homeWorkArrays/MainArrays.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/homeWorkArrays/MainArrays.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/homeworkSaleProductToCustomer/MainClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/homeworkSaleProductToCustomer/MainClass.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +39,7 @@
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.MainArrays">
+  <component name="RunManager" selected="Application.MainClass">
     <configuration name="MainArrays" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="homeWorkArrays.MainArrays" />
       <module name="homeworks" />
@@ -53,12 +53,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="homeworkDataStructuresProblems.MainClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="homeworkDataStructuresProblems.MainClass" />
+    <configuration name="MainClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="homeworkArraySorting.MainClass" />
       <module name="homeworks" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="homeworkDataStructuresProblems.*" />
+          <option name="PATTERN" value="homeworkArraySorting.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -107,11 +107,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MainClass" />
         <item itemvalue="Application.MainArrays" />
         <item itemvalue="Application.homeworkSaleProductToCustomer.MainClass" />
         <item itemvalue="Application.homeworkPassByReference.MainClass" />
         <item itemvalue="Application.homeworkMethods.MainClass" />
-        <item itemvalue="Application.homeworkDataStructuresProblems.MainClass" />
       </list>
     </recent_temporary>
   </component>
