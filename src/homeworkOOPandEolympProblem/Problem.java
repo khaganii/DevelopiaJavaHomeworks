@@ -17,7 +17,6 @@ public class Problem {
                 List <Integer> list = new ArrayList<>(Arrays.asList(begin, end));
                 accidentsDetail.put(i, list);
             }
-            solveProblem(accidentsDetail, accidentsLine);
         }
     }
 
