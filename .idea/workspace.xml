@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="69daa1b9-4a8d-4b07-a06d-69ee27264af8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/homeworkInnerClassees/Computer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/homeworkInnerClassees/MainClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/homeworkExceptionHnadling/MainException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/homeworkExceptionHnadling/MyCustomRuntimeException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/homeworkExceptionHnadling/Operations.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/homeworkInnerClassees/MainClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/homeworkInnerClassees/MainClass.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +41,7 @@
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.MainClass">
+  <component name="RunManager" selected="Application.MainException">
     <configuration name="MainAbstraction" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="homeworkAbstactionAndProblemsBasic1to30.MainAbstraction" />
       <module name="homeworks" />
@@ -66,12 +68,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Problem" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="homeworkOOPandEolympProblem.Problem" />
+    <configuration name="MainException" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="homeworkExceptionHnadling.MainException" />
       <module name="homeworks" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="homeworkOOPandEolympProblem.*" />
+          <option name="PATTERN" value="homeworkExceptionHnadling.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -79,12 +81,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="homeworkOperationsWithStrings.MainClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="homeworkOperationsWithStrings.MainClass" />
+    <configuration name="Problem" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="homeworkOOPandEolympProblem.Problem" />
       <module name="homeworks" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="homeworkOperationsWithStrings.*" />
+          <option name="PATTERN" value="homeworkOOPandEolympProblem.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -107,11 +109,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MainException" />
         <item itemvalue="Application.MainClass" />
         <item itemvalue="Application.homeworkProblemsAndPolimorphism.ProblemsMain" />
         <item itemvalue="Application.MainAbstraction" />
         <item itemvalue="Application.Problem" />
-        <item itemvalue="Application.homeworkOperationsWithStrings.MainClass" />
       </list>
     </recent_temporary>
   </component>
@@ -136,5 +138,15 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.ArrayIndexOutOfBoundsException" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
