@@ -1,6 +1,7 @@
 package homeworkCreateMyCustomArrraylistWithGenerics;
 
 import java.util.*;
+import java.util.stream.Collectors;
 
 public class MyList<T> {
     private static int ARRAY_SIZE;
@@ -12,11 +13,12 @@ public class MyList<T> {
         INDEX = 0;
     }
 
+
     public String toString() {
         StringBuilder sb = new StringBuilder("[");
         for (int i = 0; i < INDEX; i++) {
-            if(i<INDEX-1) sb.append(mainArray[i]).append(", ");
-            else sb.append(mainArray[i]);
+            if(i<INDEX-1) sb.append("{").append(mainArray[i]).append("}, ");
+            else sb.append("{").append(mainArray[i]).append("}");
         }
         return sb.append("]").toString();
     }
@@ -71,18 +73,33 @@ public class MyList<T> {
     }
 
     public boolean containsAll(Collection<?> c) {
-        return false;
+        for (Object o:c) {
+            if (!contains(o)) return false;
+        }
+        return true;
     }
 
-    public boolean addAll(Collection<? extends T> c) {
-        return false;
+    public boolean addAll(Collection<?> c) {
+        for (Object o:c)
+            add(o);
+        return true;
     }
 
-    public boolean addAll(int index, Collection<? extends T> c) {
-        return false;
-    }
 
     public boolean removeAll(Collection<?> c) {
+        Collection<?> d = c.stream().distinct().toList();
+        FIRST_LOOP: for (Object o:d) {
+            for (int i = 0; i < INDEX; i++) {
+                if(o.equals(mainArray[i]))
+                    continue FIRST_LOOP;
+            }
+            return false;
+        }
+        for (Object o:d)
+            if(contains(o))
+                while(contains(o))
+                    remove(o);
+        return true;
     }
 
     public void clear() {
@@ -121,16 +138,15 @@ public class MyList<T> {
     }
 
     public T remove(int index) {
-        if (index >= 0 && index < INDEX) {
+        if (index >= 0 && index < INDEX-1) {
             Object[] newArr = new Object[INDEX-1];
             for (int i = 0; i < INDEX; i++) {
-                if (i == index) {
-                    newArr[i] = mainArray[i];
-                    continue;
-                }
-                newArr[i] = mainArray[i+1];
+                if (i < index) newArr[i] = mainArray[i];
+                if (i > index) newArr[i-1] = mainArray[i];
             }
-            mainArray = newArr;
+            INDEX--;
+            mainArray = new Object[INDEX];
+            System.arraycopy(newArr, 0, mainArray,0,INDEX);
             return (T) mainArray[index];
         }
         return null;

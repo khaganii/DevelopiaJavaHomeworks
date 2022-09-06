@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="69daa1b9-4a8d-4b07-a06d-69ee27264af8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/homeworkCreateMyCustomArrraylistWithGenerics/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/homeworkCreateMyCustomArrraylistWithGenerics/MyList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/homeworkCreateMyCustomArrraylistWithGenerics/Computer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/homeworkCreateMyCustomArrraylistWithGenerics/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/homeworkCreateMyCustomArrraylistWithGenerics/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/homeworkCreateMyCustomArrraylistWithGenerics/MyList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/homeworkCreateMyCustomArrraylistWithGenerics/MyList.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
