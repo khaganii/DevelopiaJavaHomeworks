@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="69daa1b9-4a8d-4b07-a06d-69ee27264af8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/homeworkExceptionHnadling/MainException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/homeworkExceptionHnadling/MyCustomRuntimeException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/homeworkExceptionHnadling/Operations.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/homeworkCreateMyCustomArrraylistWithGenerics/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/homeworkCreateMyCustomArrraylistWithGenerics/MyList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/homeworkInnerClassees/MainClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/homeworkInnerClassees/MainClass.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +39,20 @@
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.MainException">
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="homeworkCreateMyCustomArrraylistWithGenerics.Main" />
+      <module name="homeworks" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="homeworkCreateMyCustomArrraylistWithGenerics.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MainAbstraction" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="homeworkAbstactionAndProblemsBasic1to30.MainAbstraction" />
       <module name="homeworks" />
@@ -81,19 +92,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Problem" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="homeworkOOPandEolympProblem.Problem" />
-      <module name="homeworks" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="homeworkOOPandEolympProblem.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="homeworkProblemsAndPolimorphism.ProblemsMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="homeworkProblemsAndPolimorphism.ProblemsMain" />
       <module name="homeworks" />
@@ -109,11 +107,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.MainException" />
         <item itemvalue="Application.MainClass" />
         <item itemvalue="Application.homeworkProblemsAndPolimorphism.ProblemsMain" />
         <item itemvalue="Application.MainAbstraction" />
-        <item itemvalue="Application.Problem" />
       </list>
     </recent_temporary>
   </component>
