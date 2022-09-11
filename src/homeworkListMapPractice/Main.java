@@ -13,16 +13,10 @@ public class Main {
 
         System.out.println(computers);
 
-        for (int i = 0; i < computers.size()-1; i++) {
-            for (int j = i; j < computers.size(); j++) {
-                if (computers.get(i).compareTo(computers.get(j))<0){
-                    Computer temp = computers.get(i);
-                    computers.set(i, computers.get(j));
-                    computers.set(j, temp);
-                }
-            }
-        }
-
+        //Collections.sort(computers); //comparable
+        computers.sort(new RamComparator());
+        System.out.println(computers);
+        computers.sort(new ModelComparator());
         System.out.println(computers);
     }
 }
