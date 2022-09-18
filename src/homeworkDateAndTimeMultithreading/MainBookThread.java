@@ -19,5 +19,8 @@ public class MainBookThread {
 
     private static void showBookPrice(Book b) {
         System.out.println("Price = " + b.getPrice());
+        synchronized ("dc"){
+
+        }
     }
 }

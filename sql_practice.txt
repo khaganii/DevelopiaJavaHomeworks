@@ -1,0 +1,19 @@
+show databases;
+create database `baza1`;
+show databases;
+
+use `baza1`;
+create table computers(id int, brand text, price double);
+use computers;
+
+insert into computers (id, brand, price) values (1, 'HP', 1200);
+insert into computers (id, brand, price) values (1, 'ACER', 900);
+insert into computers (id, brand, price) values (1, 'DELL', 1000);
+insert into computers (id, brand, price) values (1, 'MACBOOK', 2200);
+insert into computers (id, brand, price) values (1, 'SONY', 1500);
+
+select * from computers order by brand desc; // brand uzre tersine sirala
+select * from computers order by price;  // price uzre sirala
+select * from computers where price = (Select max(price) from computers); //en bahali computer
+select * from computers where price = (Select min(price) from computers); //en ucuz computer
+select avg(price) from computers;
