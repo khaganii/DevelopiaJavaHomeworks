@@ -17,3 +17,7 @@ select * from computers order by price;  // price uzre sirala
 select * from computers where price = (Select max(price) from computers); //en bahali computer
 select * from computers where price = (Select min(price) from computers); //en ucuz computer
 select avg(price) from computers;
+
+------------------------w3 schools-------------------------------------------------
+1) SELECT country as olke, count(country) as say from customers group by country order by say desc;
+2) 

@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="69daa1b9-4a8d-4b07-a06d-69ee27264af8" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql_practice.txt" beforeDir="false" afterPath="$PROJECT_DIR$/sql_practice.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/homeworkDateAndTimeMultithreading/MainDate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/homeworkDateAndTimeMultithreading/MainDate.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
