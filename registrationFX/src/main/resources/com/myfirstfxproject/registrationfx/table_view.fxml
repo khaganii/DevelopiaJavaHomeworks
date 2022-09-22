@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" cacheShape="false" centerShape="false" fillWidth="false" nodeOrientation="LEFT_TO_RIGHT" prefHeight="421.0" prefWidth="725.0" scaleShape="false" spacing="20.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.myfirstfxproject.registrationfx.ViewTableController">
+    <children>
+        <AnchorPane prefHeight="421.0" prefWidth="725.0">
+         <children>
+            <TableView fx:id="tableView" layoutY="-1.0" prefHeight="392.0" prefWidth="725.0">
+              <columns>
+                <TableColumn fx:id="nameColumn" prefWidth="43.0" text="ID" />
+                <TableColumn fx:id="surnameColumn" prefWidth="89.0" text="Name" />
+                  <TableColumn fx:id="birthdayColumn" prefWidth="133.0" text="Surname" />
+                  <TableColumn fx:id="highSchoolColumn" prefWidth="97.0" text="Birthday" />
+                  <TableColumn fx:id="genderColumn" minWidth="5.0" prefWidth="148.0" text="HighSchool" />
+                  <TableColumn fx:id="usernameColumn" minWidth="0.0" text="Gender" />
+                  <TableColumn fx:id="usernameColumn1" minWidth="3.0" prefWidth="134.0" text="Username" />
+              </columns>
+            </TableView>
+            <Button fx:id="back_button" layoutX="372.0" layoutY="395.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="176.0" text="Back to Registration" />
+            <Button fx:id="exit_button" layoutX="562.0" layoutY="395.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="131.0" text="Exit" />
+         </children>
+        </AnchorPane>
+    </children>
+</VBox>
