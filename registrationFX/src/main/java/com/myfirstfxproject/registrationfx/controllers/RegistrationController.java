@@ -1,5 +1,9 @@
 package com.myfirstfxproject.registrationfx.controllers;
 
+import com.myfirstfxproject.registrationfx.entity.Person;
+import com.myfirstfxproject.registrationfx.utils.ConnectionDb;
+import com.myfirstfxproject.registrationfx.utils.CrudOperations;
+import com.myfirstfxproject.registrationfx.utils.Gender;
 import com.myfirstfxproject.registrationfx.utils.SwitchToOtherScene;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -39,10 +43,23 @@ public class RegistrationController  implements Initializable {
 
     @FXML
     public void submit(ActionEvent event) {
-        Alert alert = new Alert(Alert.AlertType.INFORMATION);
-        alert.setTitle("Information");
-        alert.setHeaderText("Name");
-        alert.showAndWait();
+        CrudOperations c = new CrudOperations();
+        if(confirmPassword_textbox.getText().equals(newPassword_textbox.getText())){
+            Person person = new Person();
+            RadioButton rb = (RadioButton) group.getSelectedToggle();
+            person.setName(name_textbox.getText());
+            person.setSurname(surname_textbox.getText());
+            person.setBirthday(birthday_datepicker.getValue());
+            person.setHighSchool("asdfghj"); //highSchool_combobox.getValue()
+            person.setGender(Gender.valueOf(rb.getText()));
+            person.setUsername(username_textbox.getText());
+            person.setPassword(newPassword_textbox.getText());
+            c.save(person);
+        }
+        else {
+            Alert alert = new Alert(Alert.AlertType.INFORMATION);
+            alert.setHeaderText("passwords is not equals");
+        }
     }
 
     @FXML
@@ -54,7 +71,10 @@ public class RegistrationController  implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
+        CrudOperations crudOperations = new CrudOperations();
         male_radio.setToggleGroup(group);
         female_radio.setToggleGroup(group);
+        highSchool_combobox.getItems().addAll(crudOperations.getAllHighSchools());
+
     }
 }

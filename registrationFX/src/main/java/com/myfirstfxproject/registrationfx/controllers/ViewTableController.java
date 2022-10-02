@@ -51,7 +51,7 @@ public class ViewTableController {
         stage.close();
     }
 
-    @FXML
+    @FXML 
     public void deletePerson_button(ActionEvent event) {
 
     }

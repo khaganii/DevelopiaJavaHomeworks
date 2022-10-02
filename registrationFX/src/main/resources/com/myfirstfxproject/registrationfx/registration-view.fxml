@@ -24,7 +24,7 @@
             <Label layoutX="14.0" layoutY="53.0" text="Surname:" />
             <TextField fx:id="surname_textbox" layoutX="85.0" layoutY="47.0" prefHeight="25.0" prefWidth="194.0" promptText="Abdullayev" />
             <Label layoutX="14.0" layoutY="138.0" prefHeight="17.0" prefWidth="69.0" text="High school:" />
-            <TextField fx:id="username_texbox" layoutX="417.0" layoutY="9.0" promptText="KhanAZE">
+            <TextField fx:id="username_textbox" layoutX="417.0" layoutY="9.0" promptText="KhanAZE">
                <cursor>
                   <Cursor fx:constant="TEXT" />
                </cursor>

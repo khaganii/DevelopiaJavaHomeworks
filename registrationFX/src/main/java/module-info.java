@@ -5,6 +5,7 @@ module com.myfirstfxproject.registrationfx {
     requires org.controlsfx.controls;
     requires com.dlsc.formsfx;
     requires lombok;
+    requires java.sql;
 
     opens com.myfirstfxproject.registrationfx to javafx.fxml;
     exports com.myfirstfxproject.registrationfx;
