@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Films</title>
+</head>
+<body>
+        <input type="number" min="1" max="1000" value="1">
+        <button onclick="post(/byActorId/)">Search</button>
+        <br> <br>
+        <table clas="table" class="table-stripedh" style="border: 0.5px solid gray; width: 80%; margin: auto;">
+            <thead>
+            <tr>
+                <th>Actor_id</th><th>Actor_name</th><th>Actor_surname</th><th>Film_id</th>
+                <th>Film_name</th><th>Film_year</th><th>Film_length</th><th>Film_features</th><th>Film_language</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr th:each="film : ${filmList}">
+                <td th:text="${film.actorId}"></td>
+                <td th:text="${film.actorName}"></td>
+                <td th:text="${film.actorSurname}"></td>
+                <td th:text="${film.filmId}"></td>
+                <td th:text="${film.filmName}"></td>
+                <td th:text="${film.filmYear}"></td>
+                <td th:text="${film.filmLength}"></td>
+                <td th:text="${film.filmSpecialFeatures}"></td>
+                <td th:text="${film.filmLanguage}"></td>
+            </tr>
+            </tbody>
+        </table>
+
+    </body>
+</html>
