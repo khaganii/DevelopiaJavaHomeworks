@@ -49,8 +49,8 @@ public class FilmController {
         return "films";
     }
 
-    @PostMapping("/byActorId")
-    public String showById(@RequestParam Integer actorId, Model model) throws SQLException {
+    @PostMapping("/filter")
+    public String showById(@RequestParam("actor_id") Integer actorId, Model model) throws SQLException {
         Connection con = ConnectToDb.getConnection();
         PreparedStatement ps = con.prepareStatement("select a.actor_id as a_id, a.first_name as a_name, a.last_name as a_surname,  " +
                 "f.film_id as f_id, f.title as f_name, f.release_year as f_year, f.length as f_length, " +
