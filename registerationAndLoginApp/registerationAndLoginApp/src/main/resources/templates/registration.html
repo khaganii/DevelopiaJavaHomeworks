@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.thymeleaf.org ">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration</title>
+</head>
+<body>
+<form th:object="${reg}" th:action="@{/api/v1/save-user}" th:method="POST">
+    name:
+    <input type="text" th:field="*{name}" required> <br>
+    email:
+    <input type="text"  th:field="*{email}" required> <br>
+    username:
+    <input type="text"  th:field="*{username}" required> <br>
+    password:
+    <input type="text"  th:field="*{password}" required> <br>
+    <input type="submit">
+</form>
+</body>
+</html>

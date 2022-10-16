@@ -1,0 +1,25 @@
+package khan.registerationAndLoginApp.controllers;
+
+import khan.registerationAndLoginApp.entity.Registration;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+@RequestMapping("/api/v1")
+public class RegistrationController {
+
+    @GetMapping("/registration")
+    public String getRegistrationPage(){
+        return "registration";
+    }
+
+    @PostMapping("/save-user")
+    public String saveUser(@ModelAttribute(name = "reg") Registration registration){
+        System.out.println(registration.getName());
+        return "registration";
+    }
+
+}
