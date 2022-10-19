@@ -2,6 +2,7 @@ package khan.registerationAndLoginApp.controllers;
 
 import khan.registerationAndLoginApp.entity.Registration;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -12,7 +13,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class RegistrationController {
 
     @GetMapping("/registration")
-    public String getRegistrationPage(){
+    public String getRegistrationPage(Model model){
+        Registration reg = new Registration();
+        model.addAttribute("reg", reg);
         return "registration";
     }
 

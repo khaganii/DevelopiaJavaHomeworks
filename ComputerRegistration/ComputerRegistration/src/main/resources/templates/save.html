@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Save Page</title>
+</head>
+<body>
+    <h2 style="text-align: center;">Save Computers</h2>
+    <div style="text-align: center;">
+        <a style="font-size: 20px;" href="/computers/list">Show computer list</a>
+    </div>
+
+        <form style="margin: 10px auto; border: 1px dotted green; width: 300px; font-size: 20px;">
+            name: <input type="text" size="12" placeholder="HP"> <br> <br>
+            sort:   <select>
+            <option>PC</option>
+            <option>Notebook</option>
+            <option>Laptop</option>
+        </select> <br> <br>
+            ram: <select>
+            <option>4</option>
+            <option>6</option>
+            <option>8</option>
+            <option>12</option>
+        </select> <br><br>
+            ram: <select>
+            <option>256</option>
+            <option>512</option>
+            <option>1024</option>
+            <option>2048</option>
+        </select> <br><br>
+            ram-type: &nbsp;&nbsp;&nbsp;
+            HDD <input type="radio" name="ram" checked> &nbsp;&nbsp;
+            SSD <input type="radio" name="ram"> <br><br>
+            <input style="margin-left: 110px;" type="submit" class="btn btn-success" value="Submit">
+        </form>
+
+
+</body>
+</html>
