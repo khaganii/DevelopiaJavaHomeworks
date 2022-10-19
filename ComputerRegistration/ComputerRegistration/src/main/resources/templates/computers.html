@@ -17,22 +17,24 @@
     <table class="table table-stripped" style="width: 80%; border: 0.5px solid gray; margin: 30px auto;">
         <thead>
             <tr>
-                <th style="width: 9%;">id</th>
-                <th style="width: 23%;">name</th>
-                <th style="width: 23%;">sort</th>
-                <th style="width: 15%;">ram</th>
-                <th style="width: 15%;">memory</th>
-                <th style="width: 15%;">operations</th>
+                <th style="width: 7%;">id</th>
+                <th style="width: 22%;">name</th>
+                <th style="width: 22%;">sort</th>
+                <th style="width: 11%;">ram</th>
+                <th style="width: 12%;">memory</th>
+                <th style="width: 12%;">ram-type</th>
+                <th style="width: 14%;">operations</th>
             </tr>
         </thead>
         <tbody>
-            <tr>
-                <td>1</td>
-                <td>xan</td>
-                <td>note</td>
-                <td>6</td>
-                <td>190</td>
-                <td><a class="btn btn-danger" >delete</a></td>
+            <tr th:each="computer : ${computers}">
+                <td th:text="${computer.id}"></td>
+                <td th:text="${computer.name}"></td>
+                <td th:text="${computer.sort}"></td>
+                <td th:text="${computer.ram}"></td>
+                <td th:text="${computer.memory}"></td>
+                <td th:text="${computer.ramType}"></td>
+                <td><a class="btn btn-danger"  th:href = "@{/computers/delete/{id}(id=${computer.id})}">delete</a></td>
             </tr>
         </tbody>
     </table>

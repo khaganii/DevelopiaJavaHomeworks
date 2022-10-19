@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,28 +15,29 @@
         <a style="font-size: 20px;" href="/computers/list">Show computer list</a>
     </div>
 
-        <form style="margin: 10px auto; border: 1px dotted green; width: 300px; font-size: 20px;">
-            name: <input type="text" size="12" placeholder="HP"> <br> <br>
-            sort:   <select>
+        <form style="margin: 10px auto; border: 1px dotted green; width: 300px; font-size: 20px;"
+              method="POST" action="/computers/save-computer" modelAttribute="computerData" th:object="${computerData}">
+            name: <input type="text" size="12" placeholder="HP" th:field="*{name}"> <br> <br>
+            sort:   <select th:field="*{sort}">
             <option>PC</option>
             <option>Notebook</option>
             <option>Laptop</option>
         </select> <br> <br>
-            ram: <select>
+            ram: <select th:field="*{ram}">
             <option>4</option>
             <option>6</option>
             <option>8</option>
             <option>12</option>
         </select> <br><br>
-            ram: <select>
+            memory: <select th:field="*{memory}">
             <option>256</option>
             <option>512</option>
             <option>1024</option>
             <option>2048</option>
         </select> <br><br>
             ram-type: &nbsp;&nbsp;&nbsp;
-            HDD <input type="radio" name="ram" checked> &nbsp;&nbsp;
-            SSD <input type="radio" name="ram"> <br><br>
+            HDD <input type="radio" name="ram" checked th:field="*{ramType}"> &nbsp;&nbsp;
+            SSD <input type="radio" name="ram" th:field="*{ramType}"> <br><br>
             <input style="margin-left: 110px;" type="submit" class="btn btn-success" value="Submit">
         </form>
 
