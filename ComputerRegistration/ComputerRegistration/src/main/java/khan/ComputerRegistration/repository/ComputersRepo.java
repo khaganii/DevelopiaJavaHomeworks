@@ -35,6 +35,7 @@ public class ComputersRepo {
                 computer.setRamType(rs.getString(6));
                 computers.add(computer);
             }
+            con.close();
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
@@ -51,6 +52,7 @@ public class ComputersRepo {
             prs.setInt(4, computerDto.getMemory());
             prs.setString(5, computerDto.getRamType());
             prs.executeUpdate();
+            con.close();
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
