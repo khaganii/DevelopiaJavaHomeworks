@@ -15,7 +15,7 @@ import javax.persistence.Id;
 @Entity
 @FieldDefaults(level = AccessLevel.PRIVATE)
 @AllArgsConstructor
-@NoArgsConstructor                                  abstract 
+@NoArgsConstructor                                  abstract
 public class InstructorDetails {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
