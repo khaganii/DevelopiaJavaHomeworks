@@ -28,6 +28,8 @@ public class ComputerController {
 
     @GetMapping("/save-page")
     public String showSavePage(Model model){
+        ComputerDto computerDto = new ComputerDto();
+        model.addAttribute("computerData", computerDto);
         return "computer_save";
     }
 
@@ -39,8 +41,9 @@ public class ComputerController {
 
 
     @PostMapping("/save-computer")
-    public String saveComputer(@ModelAttribute("computerData")ComputerDto computerDto){
-        return computerService.save(computerDto);
+    public String saveComputer(@ModelAttribute(name = "computerData")ComputerDto computerDto){
+        computerService.save(computerDto);
+        return "computer_save";
     }
 
 }

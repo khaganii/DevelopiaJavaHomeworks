@@ -16,24 +16,24 @@
     </div>
 
         <form style="margin: 10px auto; border: 1px dotted green; width: 300px; font-size: 20px;"
-              method="POST" action="/computers/save-computer" modelAttribute="computerData" th:object="${computerData}">
+              method="POST" th:action="@{/computers/save-computer}" th:object="${computerData}">
             name: <input type="text" size="12" placeholder="HP" th:field="*{name}"> <br> <br>
             sort:   <select th:field="*{sort}">
-            <option>PC</option>
-            <option>Notebook</option>
-            <option>Laptop</option>
+            <option th:value="@{'pc'}">PC</option>
+            <option th:value="@{'Notebook'}">Notebook</option>
+            <option th:value="@{'laptop'}">Laptop</option>
         </select> <br> <br>
             ram: <select th:field="*{ram}">
-            <option>4</option>
-            <option>6</option>
-            <option>8</option>
-            <option>12</option>
+            <option th:value="@{'laptop'}">4</option>
+            <option th:value="ram">6</option>
+            <option th:value="ram">8</option>
+            <option th:value="ram">12</option>
         </select> <br><br>
             memory: <select th:field="*{memory}">
-            <option>256</option>
-            <option>512</option>
-            <option>1024</option>
-            <option>2048</option>
+            <option th:value="mem">256</option>
+            <option th:value="mem">512</option>
+            <option th:value="mem">1024</option>
+            <option th:value="mem">2048</option>
         </select> <br><br>
             ram-type: &nbsp;&nbsp;&nbsp;
             HDD <input type="radio" name="ram" checked th:field="*{ramType}"> &nbsp;&nbsp;

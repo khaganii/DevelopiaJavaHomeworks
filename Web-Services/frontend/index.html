@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="app.js"></script>
+</head>
+<body onload="page_load()">
+    <h2 >Tələbələrin siyahısı</h2>
+    <button class="btn btn-success" onclick="register()">Qeydiyyat</button>
+    <hr>
+    <table class="table table-hover table-striped">
+        <thead>
+            <tr>
+                <th style="width: 10%">No</th>
+                <th style="width: 24%">Ad</th>
+                <th style="width: 24%">Soyad</th>
+                <th style="width: 22%">Telefon</th>
+                <th style="width: 20%">Əməliyyatlar</th>
+            </tr>
+        </thead>
+        <tbody id="students-tbody">
+           
+        </tbody>
+    </table>
+</body>
+</html>

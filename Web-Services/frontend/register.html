@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="app.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <form action="" onsubmit="saveStudent(event)" id="form">
+        <label for="name">Ad</label><br>
+        <input type="text" id="name" required><br><br>
+
+        <label for="surnname">Soyad</label><br>
+        <input type="text" id="surname" required><br><br>
+
+        <label for="phone">Telefon</label><br>
+        <input type="tel" id="phone" required><br><br>
+
+        <input type="submit" id="submit" value="Təsdiqlə" class="btn btn-success" onclick="form_submit()">
+    </form>
+    <hr>
+    <input type="submit" id="students" value="Tələbələr" class="btn btn-success" onclick="students()">
+
+</body>
+</html>
