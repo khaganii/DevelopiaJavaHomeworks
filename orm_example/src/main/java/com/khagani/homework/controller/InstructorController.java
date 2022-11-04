@@ -15,8 +15,8 @@ public class InstructorController {
     @Autowired
     InstructorService instructorService;
 
-    @GetMapping("/list-of-instructors")
-    public List<Instructor> getInstructors(){
+    @GetMapping("/list-of-instructors-eager")
+    public List<Instructor> getInstructorsEager(){
         return instructorService.getAllInstructor();
     }
 }
